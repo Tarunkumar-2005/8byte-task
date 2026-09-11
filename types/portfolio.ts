@@ -9,7 +9,7 @@ export interface PortfolioHolding {
   id: string;
   symbol: string;         // e.g. "TCS.NS"
   displaySymbol: string;  // e.g. "TCS"
-  particulars: string;    // e.g. "Tata Consultancy Services Ltd"
+  particulars: string;    // e.g. "Tata  Consultancy Services Ltd"
   purchasePrice: number;
   quantity: number;
   exchange: Exchange;

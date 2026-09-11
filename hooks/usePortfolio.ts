@@ -18,7 +18,7 @@ export function usePortfolio() {
 
   const fetchPortfolio = useCallback(
     async (isManualRefresh = false) => {
-      // Prevent overlapping duplicate requests
+      // Prevent overlapping  duplicate requests
       if (isFetchingRef.current) return;
       isFetchingRef.current = true;
 
