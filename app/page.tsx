@@ -47,7 +47,7 @@ export default function PortfolioPage() {
           <ErrorState message={error} onRetry={refresh} isRetrying={isRefreshing} />
         ) : data ? (
           <>
-            {/* Warning banner if background refresh failed but cached data is available */}
+            {/* Warning banner  if background refresh failed but cached data is available */}
             {error && (
               <div className="p-3.5 rounded-lg bg-amber-950/40 border border-amber-800/60 text-amber-200 text-xs flex items-center justify-between gap-3 animate-fade-in">
                 <span>

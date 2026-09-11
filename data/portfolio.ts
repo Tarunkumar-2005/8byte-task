@@ -7,7 +7,7 @@ import { PortfolioHolding } from '@/types/portfolio';
  * This can be seamlessly replaced or mapped from any provided Excel spreadsheet.
  * 
  * Symbols are mapped to Yahoo Finance compatible tickers (.NS for NSE, .BO for BSE).
- * Realistic buy prices provide a true mix of gains and losses across sectors.
+ * Realistic buy prices  provide a true mix of gains and losses across sectors.
  */
 export const PORTFOLIO_HOLDINGS: PortfolioHolding[] = [
   {

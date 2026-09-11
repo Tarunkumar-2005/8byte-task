@@ -4,7 +4,7 @@
 > Built with Next.js 14 (App Router), React, TypeScript, Tailwind CSS, Recharts, and Server-Side Market Data Pipelines.
 
 🌐 **Live Production Deployment**: [https://8byte-task.netlify.app/](https://8byte-task.netlify.app/)  
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8byte-task/deploy-status)](https://8byte-task.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8byte-task/deploy-status)](https://8byte-task.netlify.app/) 
 
 ---
 
