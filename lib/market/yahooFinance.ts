@@ -4,6 +4,9 @@ const TIMEOUT_MS = process.env.MARKET_DATA_TIMEOUT_MS
   ? parseInt(process.env.MARKET_DATA_TIMEOUT_MS, 10)
   : 6000;
 
+const YAHOO_CHART_BASE_URL =
+  process.env.YAHOO_FINANCE_API_URL || 'https://query1.finance.yahoo.com/v8/finance/chart';
+
 interface ChartApiResponse {
   chart?: {
     result?: Array<{
@@ -36,7 +39,7 @@ async function fetchSingleYahooQuote(symbol: string): Promise<Partial<MarketQuot
   const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
 
   try {
-    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(
+    const url = `${YAHOO_CHART_BASE_URL.replace(/\/$/, '')}/${encodeURIComponent(
       symbol
     )}?interval=1d&range=1d`;
 
